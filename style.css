@@ -19,9 +19,14 @@ body {
     align-items: center;
     justify-content: center;
     font-family: Poppins;
+    background: radial-gradient(circle, rgba(139, 142, 158, 1) 0%, rgba(47, 103, 178, 1) 100%);
+    background-image: linear-gradient(to top, rgba(139, 142, 158, 1) 0%, rgba(47, 103, 178, 1) 100%, transparent);
+
 }
 
 h1 {
+    font-family: Poppins;
+    font-weight: 900;
     font-size: 20px;
     text-align: center;
 }
@@ -36,6 +41,17 @@ hr {
     border-radius: 5px;
 }
 
+footer {
+    background: #354361;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(139, 142, 158, 1) 0%, rgb(36, 91, 163) 100%, transparent);
+}
+
+
 .container {
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -43,6 +59,7 @@ hr {
     background: #FFF;
     max-width: 450px;
     min-height: 300px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .imagem-pokemon-logo,
@@ -100,4 +117,28 @@ hr {
     font-size: 1rem;
     text-align: center;
     color: #333;
+}
+
+.instagram,
+.linkedin,
+.github {
+    font-family: Poppins;
+    background-image: linear-gradient(to top, rgb(74, 79, 36), rgb(0, 0, 0), rgb(0, 4, 255));
+    font-size: 20px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.icon-instagram,
+.icon-linkedin,
+.icon-github {
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    color: black;
+    margin-right: 10px;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }

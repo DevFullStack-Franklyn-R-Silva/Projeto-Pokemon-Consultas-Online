@@ -34,12 +34,17 @@ formulario.addEventListener('submit', function (event) {
             html = html + "Tipo: " + maiuscula(data.types[0].type.name);
             resposta.innerHTML = html;
 
-            imagem.innerHTML = "<img src='" + data.sprites.front_default + "'> <img src='" + data.sprites.back_default + "'>"
+            if (data.sprites.front_default == null && data.sprites.back_default == null) {
+                imagem.innerHTML = "<h1>Não possui imagem! </h1>"
+            } else {
+                imagem.innerHTML = "<img src='" + data.sprites.front_default + "'> <img src='" + data.sprites.back_default + "'>"
+            }
         })
         .catch(function (error) {
             if (error == "SyntaxError: Unexpected token N in JSON at position 0") {
                 html = "Pokémon não encontrado! 😒"
-            } else { 
+                imagem.innerHTML = ""
+            } else {
                 html = "ERROR: " + error
             }
             resposta.innerHTML = html
