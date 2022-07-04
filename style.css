@@ -93,9 +93,10 @@ hr {
 #content {
     font-family: monospace;
     padding: 10px;
-    background: #FFCC01;
+    background-color: #FFCC01;
     border: 1px solid #c8a102;
-    font-weight: 500;
+    border-radius: 5px;
+    font-weight: 900;
     font-size: 1rem;
     text-align: center;
     color: #333;
